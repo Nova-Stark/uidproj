@@ -1,0 +1,98 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-inline: 24px;
+
+  .hero-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(212, 160, 23, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212, 160, 23, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 30%, transparent 70%);
+  }
+
+  .hero-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .hero-greeting {
+    font-size: 1.1rem;
+    color: var(--accent-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .hero-name {
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 16px;
+    position: relative;
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+
+    .mouse {
+      width: 24px;
+      height: 38px;
+      border: 2px solid var(--text-muted);
+      border-radius: 12px;
+      position: relative;
+
+      .wheel {
+        width: 3px;
+        height: 8px;
+        background: var(--text-muted);
+        border-radius: 2px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

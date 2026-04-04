@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adish | Portfolio</title>
   <meta name="description" content="Adish — Systems engineer, backend architect, and builder of high-performance infrastructure.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,10 +13,6 @@
   <nav class="navbar">
     <a href="#" class="nav-logo">A<span class="accent">.</span></a>
     
-    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
-
     <ul id="nav-links" class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -58,7 +52,7 @@
           <p>I don't just write code — I design systems. My work revolves around building scalable, efficient, and production-ready architectures, especially in areas like real-time data processing, algorithmic trading, and distributed services.</p>
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-number">10+</span>
+              <span class="stat-number">15+</span>
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat">
@@ -66,7 +60,7 @@
               <span class="stat-label">Technologies</span>
             </div>
             <div class="stat">
-              <span class="stat-number">100%</span>
+              <span class="stat-number">80%</span>
               <span class="stat-label">Open Source</span>
             </div>
           </div>
@@ -76,6 +70,7 @@
 
     <section class="projects container" id="projects">
       <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+
       <div class="projects-grid">
         <article class="project-card">
           <div class="project-image" style="background: var(--gradient-1);">
@@ -84,7 +79,7 @@
                 <a href="#" class="project-link" aria-label="View Live Project">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
-                <a href="#" class="project-link" aria-label="View Source Code on GitHub">
+                <a href="https://github.com/Nova-Stark" class="project-link" aria-label="View Source Code on GitHub">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
                 </a>
               </div>
@@ -118,7 +113,7 @@
           <div class="project-image" style="background: #8b1a1a;">
             <div class="project-overlay">
               <div class="project-links">
-                <a href="#" class="project-link" aria-label="View Source Code on GitHub">
+                <a href="https://github.com/Nova-Stark" class="project-link" aria-label="View Source Code on GitHub">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
                 </a>
               </div>
@@ -134,26 +129,32 @@
     </section>
 
     <section class="skills container" id="skills">
+  
       <h2 class="section-title">My <span class="accent">Arsenal</span></h2>
+  
       <div class="skills-grid">
+  
         <div class="skill-category">
           <h3>Languages</h3>
           <ul class="skill-list">
-            <li>Python</li><li>Java</li><li>C / C++</li><li>SQL</li>
+            <li>Python</li><li>Java</li><li>C / C++</li><li>SQL</li><li>Go</li>
           </ul>
         </div>
+  
         <div class="skill-category">
           <h3>Backend & Systems</h3>
           <ul class="skill-list">
             <li>FastAPI & Async</li><li>Multiprocessing / IPC</li><li>Sockets & ZeroMQ</li><li>Microservices</li>
           </ul>
         </div>
+  
         <div class="skill-category">
           <h3>Data & Infra</h3>
           <ul class="skill-list">
             <li>PostgreSQL</li><li>Redis</li><li>DuckDB / QuestDB</li><li>Docker & Linux</li>
           </ul>
         </div>
+  
       </div>
     </section>
 
@@ -186,32 +187,14 @@
 
   <footer class="footer container">
     <div class="footer-content">
-      <a href="#" class="footer-logo">A<span class="accent">.</span></a>
+      <a href="https://github.com/Nova-Stark" class="footer-logo">A<span class="accent">.</span></a>
       <div class="footer-links">
-        <a href="#" aria-label="GitHub Profile">GitHub</a>
-        <a href="#" aria-label="LinkedIn Profile">LinkedIn</a>
+        <a href="https://github.com/Nova-Stark" aria-label="GitHub Profile">GitHub</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn Profile">LinkedIn</a>
       </div>
     </div>
-    <p class="footer-copy">&copy; 2026 Adish. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 Adish. All rights reserved. Thank you for visiting!</p>
   </footer>
-
-  <script>
-    const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', !expanded);
-      navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.setAttribute('aria-expanded', 'false');
-        navLinks.classList.remove('active');
-      });
-    });
-  </script>
 
 </body>
 </html>
