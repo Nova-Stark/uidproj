@@ -5,6 +5,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
 
   .project-card {

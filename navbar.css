@@ -35,3 +35,18 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-inline: 24px;
+    
+    .nav-logo { font-size: 1.4rem; }
+    .nav-links { gap: 16px; }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .nav-links {
+    display: none;
+  }
+}
